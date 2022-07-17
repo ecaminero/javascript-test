@@ -13,7 +13,7 @@ function mismaCantidadCaracteres(strings, caracteres) {
   // mismaCantidadCaracteres(['javascript', 'pedro', 'amigo', 'parque'], 5) debe retornar ['pedro', 'amigo']
 
   // Tu código aca:
-
+  return strings.filter(value => value.length === caracteres)
 }
 
 // No modifiques nada debajo de esta linea //

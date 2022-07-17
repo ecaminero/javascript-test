@@ -14,7 +14,22 @@ function sumaTodosPrimos(array) {
   // Nota: Podes usar la funcion 'esPrimo' resuelta en la homework JSII.
 
   // Tu código aca:
+  var counter = 0;
+  function esPrimo(valor){
+    if (valor ===1 || valor ===0 || valor===4 ){return false;} 
+    for (let x =2; x < valor/2; x++){
+      if (valor %2 === 0) return false
+    }
+    return true
+  }
 
+  array.forEach(element => {
+    if (esPrimo(element)){
+      counter = counter+ element
+    }
+  });
+
+  return counter;
 }
 
 // No modifiques nada debajo de esta linea //
