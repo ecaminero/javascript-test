@@ -14,6 +14,9 @@ function mayorMenor(numeros) {
   // y 2 es el número más chico (menor) dentro del arreglo [9, 17, 6, 2, 4]
 
   // Tu código aca:
+  const sortedArray = numeros.sort((a, b) => a-b)
+  return [sortedArray[0], sortedArray.at(sortedArray.length-1)]
+
 }
 
 // No modifiques nada debajo de esta linea //
