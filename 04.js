@@ -19,7 +19,19 @@ function sumArray(array, n) {
   // por lo tanto también debería devolver false en este caso
 
   // Tu código aca:
-
+  let flag = false;
+  // TODO: I have to change this ugly ¿function
+  for(let i=0; i <= array.length; i++){
+    for(let j=0; j <= array.length; j++){
+      if(array[i] === array[j]) continue;
+      if(array[i]+array[j] === n ){
+        flag = true;
+        break;
+      }
+    }
+    if (flag){break;}
+  }
+  return flag
 };
 
 // No modifiques nada debajo de esta linea //
