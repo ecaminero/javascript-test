@@ -16,16 +16,16 @@ function sumaTodosPrimos(array) {
   // Tu código aca:
   var counter = 0;
   function esPrimo(valor){
-    if (valor ===1 || valor ===0 || valor===4 ){return false;} 
-    for (let x =2; x < valor/2; x++){
-      if (valor %2 === 0) return false
+    if (valor < 0){return false}
+    if (valor === 1 || valor === 0 || valor === 4 ){return false;}
+    for (let x = 2; x <= valor/2; x++){
+      if (valor % x === 0) { return false; }
     }
-    return true
+    return true;
   }
-
   array.forEach(element => {
     if (esPrimo(element)){
-      counter = counter+ element
+      counter += element;
     }
   });
 
