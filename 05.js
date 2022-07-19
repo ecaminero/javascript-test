@@ -15,6 +15,12 @@ function agregaPropiedad(amigos, propiedad) {
   // var amigos = [{ nombre: 'toni' } , { nombre: 'Emi', edad: 25 }];
   // agregaPropiedad(amigos, 'edad') debe devolver [{ nombre: 'toni', edad: null } , { nombre: 'Emi', edad: 25 }]
 
+  // BigO O(n)
+  const usermap = amigos.map(amigo => {
+    amigo[propiedad] = (propiedad in amigo) ? amigo[propiedad] : null; 
+    return amigo
+  });
+  return usermap;
 }
 
 // No modifiques nada debajo de esta linea //

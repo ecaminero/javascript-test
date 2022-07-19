@@ -20,6 +20,7 @@ function sumArray(array, n) {
 
   // Tu código aca:
   let flag = false;
+  
   // TODO: I have to change this ugly ¿function
   for(let i=0; i <= array.length; i++){
     for(let j=0; j <= array.length; j++){
